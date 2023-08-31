@@ -1,0 +1,169 @@
+object Form1: TForm1
+  Left = 962
+  Height = 357
+  Top = 127
+  Width = 521
+  ClientHeight = 337
+  ClientWidth = 521
+  Menu = MainMenu1
+  LCLVersion = '2.2.0.4'
+  object Memo1: TMemo
+    Left = 0
+    Height = 337
+    Top = 0
+    Width = 521
+    Align = alClient
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 144
+    object MenuItem1: TMenuItem
+      Caption = '&File'
+      object MenuItem5: TMenuItem
+        Caption = '&New'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = '&Open'
+        OnClick = MenuItem6Click
+      end
+      object MenuItem7: TMenuItem
+        Caption = '&Save'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Save &As...'
+        OnClick = MenuItem8Click
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Page Se&tup...'
+        OnClick = MenuItem9Click
+      end
+      object MenuItem10: TMenuItem
+        Caption = '&Print'
+        OnClick = MenuItem10Click
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'E&xit'
+        OnClick = MenuItem11Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = '&Edit'
+      object MenuItem12: TMenuItem
+        Caption = '&Undo'#9'         Ctrl+Z'
+        OnClick = MenuItem12Click
+      end
+      object Separator3: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Cu&t'#9'         Ctrl+X'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem14: TMenuItem
+        Caption = '&Copy'#9'         Ctrl+C'
+        OnClick = MenuItem14Click
+      end
+      object MenuItem15: TMenuItem
+        Caption = '&Paste'#9'         Ctrl+V'
+        OnClick = MenuItem15Click
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'De&lete'#9'              Del'
+        OnClick = MenuItem16Click
+      end
+      object Separator4: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Select &All'
+        OnClick = MenuItem17Click
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Time/&Date'#9'F5'
+        OnClick = MenuItem18Click
+      end
+      object Separator5: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem19: TMenuItem
+        Caption = '&Word Wrap'
+        OnClick = MenuItem19Click
+      end
+      object MenuItem20: TMenuItem
+        Caption = 'Set &Font...'
+        OnClick = MenuItem20Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = '&Search'
+      object MenuItem21: TMenuItem
+        Caption = '&Find'
+        OnClick = MenuItem21Click
+      end
+      object MenuItem22: TMenuItem
+        Caption = 'Find &Next'#9'F3'
+        OnClick = MenuItem22Click
+      end
+      object MenuItem23: TMenuItem
+        Caption = '&Replace'
+        OnClick = MenuItem23Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = '&Help'
+      object MenuItem24: TMenuItem
+        Caption = '&Help Topics'
+        OnClick = MenuItem24Click
+      end
+      object Separator6: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem25: TMenuItem
+        Caption = '&About Notepad...'
+        OnClick = MenuItem25Click
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 122
+    Top = 144
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 212
+    Top = 144
+  end
+  object PageSetupDialog1: TPageSetupDialog
+    Left = 303
+    Top = 144
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 401
+    Top = 144
+  end
+  object ReplaceDialog1: TReplaceDialog
+    Options = [frDown, frReplace, frReplaceAll, frHidePromptOnReplace]
+    OnReplace = ReplaceDialog1Replace
+    Left = 122
+    Top = 225
+  end
+  object FindDialog1: TFindDialog
+    OnFind = FindDialog1Find
+    Left = 212
+    Top = 225
+  end
+  object FontDialog1: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 303
+    Top = 225
+  end
+end

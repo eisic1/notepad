@@ -1,0 +1,24 @@
+object Form2: TForm2
+  Left = 917
+  Height = 291
+  Top = 179
+  Width = 437
+  Caption = 'About Notepad'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 80
+    Height = 25
+    Top = 128
+    Width = 261
+    Caption = 'Ovo je obrazac za notepad'
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Height = -19
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+end
