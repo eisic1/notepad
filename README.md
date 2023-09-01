@@ -8,3 +8,8 @@ The application was created in Lazarus(Pascal). It serves as a notepad applicati
 
 The application was created in 2022
 ```
+
+## Run app
+```
+it is enough to run the .exe file
+```
